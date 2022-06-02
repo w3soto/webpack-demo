@@ -1,0 +1,44 @@
+
+@import "styles/reset.css";
+
+$light-text: #fff;
+
+
+body {
+    background: linear-gradient(to bottom, skyblue, yellowgreen);
+    color: $light-text;
+    min-height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+
+    h1 {
+        font-size: 99px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    div {
+        display: flex;
+        gap: 64px;
+        justify-content: center;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 32px 0 rgba(0,0,0,.5);
+
+        &:first-child {
+            transform: scaleX(-1);
+        }
+    }
+
+}
+
