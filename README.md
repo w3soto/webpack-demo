@@ -4,23 +4,23 @@ $ mkdir PROJECT
 $ cd PROJECT
 ```
 
-Initialize project
+#### Initialize project
 ```bash
 $ npm init -y
 ```
 
-Install webpack
+#### Install webpack
 ```bash
 $ npm i -D webpack webpack-cli
 ```
 
-Install required packages 
+#### Install required packages 
 
 ```bash
 //load css files 
 $ npm i -D css-loader
 
-// will creates style nodes from JS strings and add them into html header
+// will create style nodes from JS strings and add them into html header
 $ npm i -D style-loader
 
 // process sass/scss files
@@ -41,5 +41,12 @@ $ npm i -D babel babel-loader @babel/core @babel/preset-env
 $ npm i -D webpack-dev-server
 ```
 
+#### Run development server
+```bash
+npm run serve
+```
 
-
+#### Build
+```bash
+npm run build
+```
