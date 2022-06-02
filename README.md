@@ -37,6 +37,10 @@ $ npm i -D postcss postcss-loader postcss-preset-env
 // see .browserslistrc file
 $ npm i -D babel babel-loader @babel/core @babel/preset-env
 
+// typescript support
+// see .browserslistrc file
+$ npm i -D ts-node ts-loader @babel/preset-typescript
+
 // dev server
 $ npm i -D webpack-dev-server
 ```

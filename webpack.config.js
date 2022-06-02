@@ -26,12 +26,15 @@ module.exports = (env) => ({
         ],
     },
     entry: {
-        main: "./src/main.js" // main.scss is imported here...
+        main: "./src/main.ts" // main.scss is imported here...
     },
     output: {
         clean: true,
         filename: env.mode === "production" ? "[contenthash].js" : "main.js",
         assetModuleFilename: "assets/[name][ext]"
+    },
+    resolve: {
+        extensions: [".ts", ".js"],
     },
     module: {
         rules: [
@@ -45,11 +48,12 @@ module.exports = (env) => ({
                 ]
             },
             {
-                test: /\.js$/i,
+                test: /\.(ts|js)$/i,
                 exclude: /node_modules/,
-                use: [{
-                    loader: "babel-loader"
-                }]
+                use: [
+                    "ts-loader",
+                    //"babel-loader"
+                ]
             },
             // copy only if assets was loaded by javascript
             {

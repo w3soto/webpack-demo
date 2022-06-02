@@ -1,0 +1,21 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/tsc",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "strictPropertyInitialization": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    "moduleResolution": "node"
+  },
+  "lib": [
+    "es6",
+    "dom"
+  ]
+}
