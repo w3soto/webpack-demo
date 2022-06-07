@@ -1,7 +1,7 @@
 {
-  "name": "webpack",
+  "name": "Webpack Demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webpack example project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,8 +10,8 @@
     "build:watch": "webpack --watch"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Martin Sotník",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
